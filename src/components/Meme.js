@@ -1,7 +1,11 @@
 /* eslint-disable import/no-anonymous-default-export */
+import memesData from "../memesData"
+
 export default function () {
   function getMeme() {
-    console.log("hi")
+    // console.log(memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)])
+    let meme = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)]
+    console.log(meme)
   }
   return (
     <section className="meme">
