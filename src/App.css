@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, rgb(94, 11, 172), rgb(167, 90, 239));
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 35px;
+  color: white;
+}
+
+#nav-logo-title {
+  display: flex;
+  gap: 10px;
+}
+
+#nav-alt-text {
+  padding-top: 6px;
+}
