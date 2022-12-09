@@ -1,11 +1,14 @@
 /* eslint-disable import/no-anonymous-default-export */
+import React from "react"
 import memesData from "../memesData"
 
 export default function () {
+  const [memeImage, setMemeImage] = React.useState(null)
+
   function getMeme() {
     // console.log(memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)])
-    let meme = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)]
-    console.log(meme)
+    let memeUrl = memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)].url
+    setMemeImage(memeUrl)
   }
   return (
     <section className="meme">
@@ -15,6 +18,7 @@ export default function () {
         <input type="text" className="form-input" placeholder="bottom text"></input>
         <button className="form-button" onClick={getMeme}>Get a new meme image 🖼</button>
       </div>
+      {memeImage && <img src={memeImage} alt="meme" />}
     </section>
   )
 }

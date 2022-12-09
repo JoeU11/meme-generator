@@ -50,4 +50,5 @@ nav {
   cursor: pointer;
   background-image: linear-gradient(to right, rgb(94, 11, 172), rgb(167, 90, 239));
   color: white;
+  font-weight: bold;
 }
