@@ -1,9 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
-import React from "react"
+import React, { useState } from "react"
 import memesData from "../memesData"
 
 export default function () {
-  const [memeImage, setMemeImage] = React.useState(null)
+  const [memeImage, setMemeImage] = useState(null)
 
   function getMeme() {
     // console.log(memesData.data.memes[Math.floor(Math.random() * memesData.data.memes.length)])
